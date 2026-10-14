@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111410">
+  <title>Still — Make room for one thing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="Still home">
+        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        still<span class="wordmark-period">.</span>
+      </a>
+      <span class="topbar-note">A LITTLE SPACE TO THINK</span>
+      <div class="live-status"><span class="status-dot"></span> YOUR SPACE</div>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow" id="today-date">A QUIETER KIND OF PRODUCTIVITY</p>
+        <h1 id="page-title">Make room<br>for <em>one thing.</em></h1>
+        <p class="intro-copy">You don't have to do it all. Just begin with what matters now.</p>
+      </section>
+
+      <section class="workbench" aria-label="Focus workspace">
+        <div class="timer-section">
+          <div class="section-heading">
+            <span class="section-index">01</span>
+            <h2>Focus block</h2>
+            <span class="heading-rule"></span>
+            <span class="soft-label">JUST THIS, FOR NOW</span>
+          </div>
+
+          <div class="timer-content">
+            <div class="timer-ring" id="timer-ring" role="timer" aria-label="25 minutes remaining">
+              <div class="timer-face">
+                <span class="timer-caption" id="timer-caption">A FRESH START</span>
+                <span class="timer-display" id="timer-display">25:00</span>
+                <span class="timer-subtitle">MINUTES OF YOU</span>
+              </div>
+            </div>
+
+            <div class="timer-controls">
+              <div class="duration-switch" role="group" aria-label="Focus duration">
+                <button class="duration-button is-selected" type="button" data-duration="25" aria-pressed="true">25 min</button>
+                <button class="duration-button" type="button" data-duration="50" aria-pressed="false">50 min</button>
+              </div>
+              <div class="action-row">
+                <button class="start-button" id="toggle-timer" type="button">
+                  <span class="play-glyph" aria-hidden="true"></span>
+                  <span id="toggle-label">Begin focus</span>
+                </button>
+                <button class="reset-button" id="reset-timer" type="button" aria-label="Reset timer" title="Reset timer">
+                  <span aria-hidden="true">↺</span>
+                </button>
+              </div>
+              <p class="timer-hint" id="timer-hint">One thing at a time. You've got this.</p>
+            </div>
+          </div>
+
+          <div class="session-summary" aria-live="polite">
+            <div><span class="summary-value" id="session-count">00</span><span class="summary-label">BLOCKS TODAY</span></div>
+            <span class="summary-divider"></span>
+            <div><span class="summary-value" id="minutes-count">00</span><span class="summary-label">MINUTES IN FOCUS</span></div>
+            <span class="summary-note">Small steps still count <span aria-hidden="true">↗</span></span>
+          </div>
+        </div>
+
+        <aside class="tasks-section" aria-labelledby="tasks-title">
+          <div class="section-heading">
+            <span class="section-index">02</span>
+            <h2 id="tasks-title">The short list</h2>
+            <span class="heading-rule"></span>
+          </div>
+
+          <div class="tasks-meta">
+            <span>Keep it kind. Keep it small.</span>
+            <span class="task-count" id="task-count">0 / 0</span>
+          </div>
+          <ul class="task-list" id="task-list" aria-label="Your tasks"></ul>
+
+          <form class="add-task-form" id="add-task-form">
+            <label class="visually-hidden" for="new-task">Add a task</label>
+            <input id="new-task" name="task" type="text" maxlength="80" placeholder="Something on your mind?" autocomplete="off">
+            <button type="submit" aria-label="Add task" title="Add task"><span aria-hidden="true">+</span></button>
+          </form>
+
+          <div class="closing-note">
+            <span class="closing-mark" aria-hidden="true">✳</span>
+            <p>Leave a little room<br>for the unexpected.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>STILL HERE, STILL BEGINNING.</span>
+      <span class="footer-sun" aria-hidden="true">◌</span>
+      <span>TAKE IT ONE MOMENT AT A TIME</span>
+    </footer>
+  </div>
+</body>
+</html>
